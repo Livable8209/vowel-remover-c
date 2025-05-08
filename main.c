@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
         }
       }
     }
-    printf("%s", string);
+    printf("%s ", string);
   }
 
   printf("\n");
