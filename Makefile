@@ -1,7 +1,7 @@
 main: main.c
-	clang -std=c23 -Wall -Wextra -Werror -g -O0 -o ./build/main main.c
-	./build/main the quick brown fox jumps over the lazy dog
+	clang -std=c23 -Wall -Wextra -Werror -g -O0 -o ./main main.c
+	./main the quick brown fox jumps over the lazy dog
 clean:
-	rm build/main
+	rm main
 grind: main
-	valgrind -s --leak-check=full ./build/main the quick brown fox jumps over the lazy dog
+	valgrind -s --leak-check=full ./main the quick brown fox jumps over the lazy dog
